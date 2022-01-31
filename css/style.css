@@ -39,6 +39,15 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+
 .flex {
     display: flex;
     align-items: center;
@@ -80,15 +89,12 @@ body{
     font-size: 16px;
 }
 
-
 .header-input img {
     position: absolute;
     right: 0;
     margin-right: 27px;
     cursor: pointer;
 }
-
-
 
 .header-box-user,
 .header-box-heart {
@@ -103,8 +109,10 @@ body{
 .header-box-user p,
 .header-box-heart p {
     margin-left: 11px;
+    text-transform: uppercase;
     color: var(--neutral-black);
     font-weight: 700;
+    font-size: 12px;
 }
 
 .header-box-bag {
@@ -123,3 +131,43 @@ body{
     font-weight: 500;
 }
 
+/* Menu */
+
+.navbar ul {
+    background-color: var(--neutral-black);
+}
+
+.navbar li {
+    margin: 14px 32px 14px 0;
+}
+
+.navbar li:nth-last-child(1){
+    margin-right: 0;
+}
+
+.navbar li a {
+    color: var(--neutral-white);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.breadcrumb {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.breadcrumb p{
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--neutral-black-light);
+}
+
+.breadcrumb span {
+    color: var(--neutral-gray-dark);
+    font-weight: 600;
+    margin: auto 10px;
+}
+
+.breadcrumb strong {
+    color: var(--brand-orange-dark);
+}
