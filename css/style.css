@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap');
+
+
+:root {
+    /* Brand Colors */
+    --brand-green-dark: #2D8A44;
+    --brand-green: #40B25C;
+    --brand-green-light: #53CC71;
+    --brand-gray-light: #E1E7FA;
+    --brand-brown-dark: #80351D;
+    --brand-orange-dark: #E36305;
+    --brand-orange: #FF8861;
+    --brand-orange-light: #FFA688;
+
+    /* Feedback Colors */
+    --feedback-red: #E63737;
+    --feedback-pink-light: #F6CBCB;
+    --feedback-yellow: #FFEA7D;
+    --feedback-light: #FFFFD8;
+    --feedback-green: #008F00;
+    --feedback-green-light: #DAF4CD;
+
+    /* Neutral Colors */
+    --neutral-black: #030303;
+    --neutral-black-light: #40464D;
+    --neutral-gray-dark: #9FA3A6;
+    --neutral-gray: #CFD1D2;
+    --neutral-gray-light: #E9E9E9;
+    --neutral-white: #FFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin: 0 32px 0 32px;
+}
+
+
+/* Header */
+.header {
+    margin-top: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.input {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header-input input{
+    width: 55vw;  
+    height: 48px; 
+    border: 1px solid var(--neutral-gray-dark);
+    border-radius: 4px;
+    outline: none;
+}
+
+.header-input input {
+    padding-left: 20px;
+    color: var(--neutral-black);
+    font-size: 16px;
+}
+
+
+.header-input img {
+    position: absolute;
+    right: 0;
+    margin-right: 27px;
+    cursor: pointer;
+}
+
+
+
+.header-box-user,
+.header-box-heart {
+    padding: 16px;
+    margin-right: 9px;
+}
+
+.header-box-bag {
+    margin: 16px;
+}
+
+.header-box-user p,
+.header-box-heart p {
+    margin-left: 11px;
+    color: var(--neutral-black);
+    font-weight: 700;
+}
+
+.header-box-bag {
+    position: relative;
+}
+
+.header-box-bag::before {
+    content: '0';
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    padding: 1px 7px 1px 7px;
+    color: var(--neutral-white);
+    background-color: var(--brand-orange-dark);
+    border-radius: 14px;
+    font-weight: 500;
+}
+
