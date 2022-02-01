@@ -43,13 +43,14 @@ a {
     text-decoration: none;
 }
 
-ul, li {
-    list-style: none;
-}
 
 button {
     border: none;
     border-radius: 4px;
+}
+
+*:focus {
+    outline: none;
 }
 
 .flex {
@@ -150,10 +151,12 @@ button {
 
 .navbar ul {
     background-color: var(--neutral-black);
+    list-style: none;
 }
 
 .navbar li {
     margin: 14px 32px 14px 0;
+    list-style: none;
 }
 
 .navbar li:nth-last-child(1){
@@ -534,4 +537,234 @@ button {
 
 .customers-two {
     margin-top: 64px;
+}
+
+/* Departments */
+.departments {
+    margin-top: 64px;
+    position: relative;
+}
+
+.departments > img {
+    width: 100%;
+}
+
+.arrow-departments img {
+    position: absolute;
+    top: 50%;
+}
+
+.arrow-left-departaments {
+    position: absolute;
+    left: 0;
+    margin-left: 16px;
+
+    cursor: pointer;
+}
+
+.arrow-right-departaments {
+    position: absolute;
+    right: 0;
+    margin-right: 16px;
+
+    cursor: pointer;
+}
+
+
+.about > h3 {
+    color: var(--neutral-black);
+    margin: 46px 0 24px 0;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.about > strong {
+    font-size: 12px;
+}
+
+.about > p {
+    margin: 24px 0;
+    font-size: 12px;
+    max-width: 60%;
+}
+
+.about ul {
+    margin-left: 15px;
+}
+
+.about ul li {
+    font-size: 12px;
+}
+
+.about p > a {
+    color: #4f66a4;
+}
+
+
+/* Newsletter */
+
+.newsletter {
+    background-color: var(--brand-green);
+    padding: 32px 138px;
+}
+
+.newsletter h1 {
+    color: var(--neutral-white);
+    margin-right: 64px;
+}
+
+
+.newsletter-form-input {
+    position: relative;
+}
+
+.newsletter-form input {
+    height: 48px;
+    width: 30vw;
+    border-radius: 4px;
+    border: none;
+    padding-left: 60px;
+    font-size: 16px;
+}
+
+.newsletter-form img {
+    position: absolute;
+    left: 0;
+    padding: 8px 13px;
+}
+
+.newsletter-form button {
+    padding: 17px 32px;
+    margin-left: 16px;
+    background-color: var(--brand-orange-dark);
+    color: var(--neutral-white);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background-color: var(--neutral-black);
+    padding-top: 48px;
+    padding-bottom: 52px;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer-text-container {
+    display: flex;
+}
+
+.footer-section h5 {
+    color: var(--neutral-white);
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.footer-text p {
+    color: var(--neutral-gray);
+    font-size: 14px;
+    margin-bottom: 14px;
+    margin-right: 16px;
+    width: 216px;
+}
+
+.footer-btn {
+    margin-top: 48px;
+    margin-left: 74px;
+}
+
+.footer-btn a {
+    padding-left: 11px;
+    color: var(--neutral-white);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-btn-1,
+.footer-btn-2 {
+    padding: 12px 120px;
+    border-radius: 4px;   
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer-btn-1 {
+    background-color: var(--brand-green);
+    margin-bottom: 16px;
+}
+
+.footer-btn-2 {
+    background-color: var(--brand-orange-dark);
+    margin-bottom: 24px;
+}
+
+.footer-btn span {
+    font-size: 14px;
+    color: var(--neutral-gray);
+
+    display: flex;
+    justify-content: center;
+}
+
+.divisor-footer {
+    display: block;
+    margin: 46px auto 63px auto;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+
+.footer-icon-social {
+    margin-right: 200px;
+}
+
+.footer-icon-social img {
+    padding-right: 32px;
+}
+
+.footer-icon-social img:nth-last-child(1) {
+    padding-right: 0;
+}
+
+.footer-reserverd > strong,
+.footer-reserverd > p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    font-size: 12px;
+}
+
+.footer-reserverd > strong {
+    color: var(--neutral-white);
+}
+
+.footer-reserverd > p {
+    color: var(--neutral-gray);
+    padding: 12px 174px 28px 174px;
+}
+
+.footer-companies p {
+    color: var(--neutral-gray);
+    font-size: 12px;
+}
+
+.footer-companies-vtex > img {
+    margin: 0 24px 0 12px;
+}
+
+.footer-companies-b8one > img {
+    margin-left: 8px;
 }
