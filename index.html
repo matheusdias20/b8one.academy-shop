@@ -7,8 +7,10 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media-queries.css">
 
-        <title>Document</title>
+        <title>Shopp b8one.academy</title>
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     </head>
 
     <body>
@@ -18,10 +20,10 @@
                 <img src="img/header/b8one.academy-logo.svg" alt="">
             </div>
 
-            <div class="header-input">
-                <div class="input">
+            <div class="header-input" >
+                <div class="input" id="figure">
                     <input type="text" placeholder="What are you looking for?">
-                    <img src="img/header/icon-search.svg" alt="">
+                    <img src="img/header/icon-search.svg" alt="" id="figure-img">
                 </div>
             </div>
 
@@ -117,9 +119,9 @@
 
                             <div class="options-count flex">
                                 <div class="options-count-text flex">
-                                    <img src="img/products/minus.svg" alt="">
-                                    <h3>01</h3>
-                                    <img src="img/products/plus.svg" alt="">
+                                    <img src="img/products/minus.svg" alt="" id="incr-count">
+                                    <h3 id="h3-count">1</h3>
+                                    <img src="img/products/plus.svg" alt="" id="decr-count">
                                 </div>
 
                                 <div class="count-buy">
@@ -143,6 +145,7 @@
             </div>
         </main>
 
+        <!-- Customers -->
         <section class="customers-one container">
 
             <img src="img/costumers/arrow-left.svg" alt="" class="arrow-left">
@@ -283,6 +286,7 @@
             </div>      
         </section>
 
+        <!-- Departments -->
         <section class="departments container">
             <img src="img/departments/departments.svg" alt="">
 
@@ -291,9 +295,10 @@
                 <img src="img/departments/arrow-right.svg" alt="" class="arrow-right-departaments">
             </div>
 
-            <img src="img/departments/divisor.svg" alt="">
+            <img src="img/departments/divisor.svg" alt="" class="departments-divisor">
         </section>
 
+        <!-- About -->
         <section class="about container">
             <h3>About this item</h3>
             <strong>We aim to show you accurate product information. Manufacturers, suppliers and others provide what you see here, and we have not verified it. See our disclaimer</strong>
@@ -315,6 +320,7 @@
             <p>Go to <a href="">apple.com/ipad-air/specs</a>  for a complete set.</p>
         </section>
 
+        <!-- Newsletter -->
         <section class="newsletter flex-center">
             <h1>Get news & special offers!</h1>
 
@@ -327,6 +333,7 @@
             </div>
         </section>
 
+        <!-- Footer -->
         <footer>
             <div class="footer container">
                 <div class="footer-section">
@@ -425,5 +432,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="js/main.js"></script>
     </body>
 </html>
