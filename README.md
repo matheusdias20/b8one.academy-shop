@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <img src="img/Post.png" alt="">
+  <img src="img/README.png" alt="">
 </p>
 
 ### Site 💻
